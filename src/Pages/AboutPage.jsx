@@ -7,13 +7,13 @@ const AboutPage = () => {
         <div>
             <Header></Header>
             <div className="hero   min-h-screen">
-                <div className="hero-content  xs:flex-col lg:flex-row-reverse md:flex-row-reverse sm:flex-row-reverse">
+                <div className="hero-content ssm:flex-col  xs:flex-col lg:flex-row-reverse md:flex-row-reverse sm:flex-row-reverse">
                     <img
                         src={rehanImg}
-                        className="max-w-sm rounded-lg shadow-2xl" />
+                        className="max-w-[300px] lg:max-w-[500px] md:max-w-[400px]  rounded-lg shadow-2xl" />
                     <div>
                         <h1 className="text-4xl font-bold">Our Honorable Manager</h1>
-                        <p className="py-6 text-[indigo]">
+                        <p className="py-6 text-[indigo] text-justify">
                             Dear Valued Clients, Partners, and Team Members,
 
                             I want to take a moment to express my deep appreciation for your trust and continued support in our journey. At [Company Name], our commitment to delivering innovative IT solutions has always been at the core of what we do. Every challenge we overcome and every success we celebrate is a testament to the hard work and dedication of our talented team and the strong partnerships we’ve built along the way.

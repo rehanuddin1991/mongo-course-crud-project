@@ -56,9 +56,9 @@ const EditCourse = () => {
   return (
     <div>
         <Header></Header>
-         <div className="card mx-auto bg-base-100  w-[550px] xs:w-[300px]   sm:w-[400px]  shadow-2xl">
+         <div className="mt-8 card mx-auto  md:w-[550px] lg:w-[550px] ssm:w-[300px] xs:w-[300px]   sm:w-[400px]  shadow-2xl">
             <form className="card-body" onSubmit={handleForm}>
-              <fieldset className='border border-[indigo] p-10'>
+              <fieldset className=' '>
                 <legend className='text-xl text-[darkorange] font-semibold'>Course Information Update</legend>
 
                 <div className="form-control">

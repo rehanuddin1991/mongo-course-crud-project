@@ -9,7 +9,7 @@ const ContactPage = () => {
         <div className="hero mt-6 ">
   <div className="hero-content    ">
     
-    <div className="card    w-[550px] xs:w-[300px]   sm:w-[400px]  shrink-0 shadow-2xl">
+    <div className="card md:w-[550px]  lg:w-[550px] ssm:w-[300px] xs:w-[300px]   sm:w-[400px]   shadow-2xl">
       <form className="card-body">
         <div className="form-control">
           <label className="label">

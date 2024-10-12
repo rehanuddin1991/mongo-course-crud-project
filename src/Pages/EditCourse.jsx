@@ -5,6 +5,7 @@ import Footer from '../Components/Footer';
 import toast from 'react-hot-toast';
 
 const EditCourse = () => {
+  const api_url="https://express-mongodb-backend-x3wv.onrender.com";
     const loaderData=useLoaderData();
     const navigate=useNavigate();
     const [courses, setCourses] = useState([]);
@@ -27,7 +28,7 @@ const EditCourse = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(inputObj)
     };
-    fetch(`http://localhost:5000/course/${loaderData._id}`, inputData)
+    fetch(`${api_url}/course/${loaderData._id}`, inputData)
       .then(response => response.json())
       .then((data) => {
         console.log(data);

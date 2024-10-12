@@ -5,6 +5,7 @@ import { useLoaderData, useNavigate } from 'react-router-dom';
 import Course from '../Components/Course';
 
 const CoursePage = () => {
+  const api_url="https://express-mongodb-backend-x3wv.onrender.com";
   const navigate=useNavigate();
   const all_courses = useLoaderData();
   // console.log(all_courses);
@@ -28,14 +29,14 @@ const CoursePage = () => {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(inputObj)
     };
-    fetch('http://localhost:5000/courses', inputData)
+    fetch(`${api_url}/courses`, inputData)
       .then(response => response.json())
       .then((data) => {
         //console.log(data);
         if (data.insertedId) {
           toast.success('Successfully saved to mongodb!');
          // navigate("/course")
-         fetch("http://localhost:5000/courses")
+         fetch(`${api_url}/courses`)
          .then((res)=>res.json())
          .then(data=>setCourses(data))
          .catch(err=>console.error(err))

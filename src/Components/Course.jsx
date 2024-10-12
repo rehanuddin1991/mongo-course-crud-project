@@ -3,12 +3,13 @@ import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 
 const Course = ({all_courses,setCourses,course}) => {
+  const api_url="https://express-mongodb-backend-x3wv.onrender.com";
  // console.log(all_courses);
   const [newList,setNewList]=useState([]);
   const handleDelete=(id)=>
   {
     //alert(id);
-    fetch(`http://localhost:5000/course/${id}`, {method:"DELETE"})
+    fetch(`${api_url}/course/${id}`, {method:"DELETE"})
       .then(response => response.json())
       .then((data) => {
         //console.log(data);

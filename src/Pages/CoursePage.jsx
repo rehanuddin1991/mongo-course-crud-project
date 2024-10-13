@@ -58,7 +58,7 @@ const CoursePage = () => {
       <div className="hero bg-base-200 min-h-screen">
         <div className="hero-content  ">
 
-          <div className="card bg-base-100 w-[550px] xs:w-[300px]   sm:w-[400px]  shadow-2xl">
+          <div className="card bg-base-100 ssm:w-[320px] xs:w-[260px] md:w-[400px]  lg:w-[600px]  sm:w-[400px]  shadow-2xl">
             <form className="card-body" onSubmit={handleForm}>
               <fieldset className=' '>
                 <legend className='text-xl text-[darkorange] font-semibold'>Course Information Entry</legend>

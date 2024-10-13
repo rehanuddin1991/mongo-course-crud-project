@@ -38,8 +38,8 @@ const Header = () => {
       </ul>
     </div>
     <div className="navbar-end flex gap-4 items-center   ">
-      <a className="btn btn-info xs:text-[0.6rem]  ssm:text-[0.6rem]  xs:py-1 xs:px-1   "><Link to="/about">About</Link></a>
-      <a className="btn btn-primary  xs:text-[0.6rem] ssm:text-[0.6rem]  xs:py-1 xs:px-1 "><Link to="/contact">Contact</Link> </a>
+      <Link className="btn btn-info xs:text-[0.6rem] md:text-[0.8rem] ssm:text-[0.6rem]  xs:py-1 xs:px-1"  to="/about">About</Link> 
+       <Link className="btn btn-primary  xs:text-[0.6rem] md:text-[0.8rem] ssm:text-[0.6rem]  xs:py-1 xs:px-1 " to="/contact">Contact</Link>  
     </div>
   </div>
   )

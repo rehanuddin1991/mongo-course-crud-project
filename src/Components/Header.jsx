@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Header = () => {
   return (
@@ -29,17 +29,17 @@ const Header = () => {
       </div>
       <Link to="/" className="btn btn-ghost  xs:text-[0.9rem] ssm:text-[0.9rem] lg:text-xl md:text-xl sm:text-xl">Rehan's UI</Link>
     </div>
-    <div className="navbar-center text-2xl font-bold xs:hidden ssm:hidden sm:hidden  md:flex lg:flex">
-      <ul className="menu menu-horizontal px-1 text-[midnightblue]">
-        <li><Link to="/">Home </Link> </li>
-        <li><Link to="/course">Course </Link> </li>
+    <div className="navbar-center text-3xl font-bold xs:hidden ssm:hidden sm:hidden  md:flex lg:flex">
+      <ul className="menu menu-horizontal px-3 text-[midnightblue]">
+         <NavLink to="/">Home </NavLink>   &nbsp; &nbsp; &nbsp; &nbsp; 
+         <NavLink to="/course">Course </NavLink>  
         
          
       </ul>
     </div>
     <div className="navbar-end flex gap-4 items-center   ">
-      <Link className="btn btn-info xs:text-[0.6rem] md:text-[0.8rem] ssm:text-[0.6rem]  xs:py-1 xs:px-1"  to="/about">About</Link> 
-       <Link className="btn btn-primary  xs:text-[0.6rem] md:text-[0.8rem] ssm:text-[0.6rem]  xs:py-1 xs:px-1 " to="/contact">Contact</Link>  
+      <NavLink  className=" lg:text-[1rem] xs:text-[0.6rem] md:text-[0.8rem] ssm:text-[0.6rem]  xs:py-1 xs:px-1"  to="/about">About</NavLink> 
+       <NavLink className="lg:text-[1rem]  xs:text-[0.6rem] md:text-[0.8rem] ssm:text-[0.6rem]  xs:py-1 xs:px-1 " to="/contact">Contact</NavLink>  
     </div>
   </div>
   )

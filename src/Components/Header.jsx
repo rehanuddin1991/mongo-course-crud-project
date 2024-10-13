@@ -27,7 +27,7 @@ const Header = () => {
          <li><Link to="/course">Course </Link> </li>
         </ul>
       </div>
-      <Link to="/" className="btn btn-ghost  xs:text-[10px] ssm:text-[10px] lg:text-xl md:text-xl sm:text-xl">Rehan's UI</Link>
+      <Link to="/" className="btn btn-ghost  xs:text-[0.9rem] ssm:text-[0.9rem] lg:text-xl md:text-xl sm:text-xl">Rehan's UI</Link>
     </div>
     <div className="navbar-center text-2xl font-bold xs:hidden ssm:hidden sm:hidden  md:flex lg:flex">
       <ul className="menu menu-horizontal px-1 text-[midnightblue]">
